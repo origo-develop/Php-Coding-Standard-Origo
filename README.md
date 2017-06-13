@@ -26,6 +26,7 @@ This standard can be installed with the [Composer](https://getcomposer.org/) dep
 5. Shortcut
 		
 		Copy phpcbf.bat and phpcs.bat into your system PATH and simply use
+		Change file content on your needs
 
         phpcs /path/to/code
         phpcbf /path/to/code

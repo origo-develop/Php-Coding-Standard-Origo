@@ -14,4 +14,4 @@ if command -v 'cygpath' >/dev/null 2>&1; then
 fi
 
 dir=$(echo $dir | sed 's/ /\ /g')
-"${dir}/phpcbf --standard=Origo --extensions=php,phtml --warning-severity=0 --no-patch" "$@"
+"${dir}/phpcbf --standard=Origo --extensions=php --warning-severity=0 --no-patch" "$@"
