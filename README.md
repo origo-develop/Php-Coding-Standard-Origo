@@ -15,8 +15,11 @@ This standard can be installed with the [Composer](https://getcomposer.org/) dep
         composer require --dev origo-develop/Php-Coding-Standard-Origo:@stable
 
 3. Add the coding standard to the PHP_CodeSniffer install path
-		xcopy Symfony2 ..\..\squizlabs\php_codesniffer\CodeSniffer\Standards\ /E
-		xcopy Origo ..\..\squizlabs\php_codesniffer\CodeSniffer\Standards\ /E
+
+		xcopy Origo ..\..\squizlabs\php_codesniffer\CodeSniffer\Standards\Origo /Y /E /I
+
+		xcopy ..\..\escapestudios\symfony2-coding-standard\Symfony2 ..\..\squizlabs\php_codesniffer\CodeSniffer\Standards\Symfony2 /Y /E /I
+
 		Or simply run install.bat
 
 4. Check the installed coding standards for "Origo"
