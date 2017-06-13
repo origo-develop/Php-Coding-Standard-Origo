@@ -22,14 +22,16 @@ This standard can be installed with the [Composer](https://getcomposer.org/) dep
 
 		Or simply run install.bat
 
-4. Check the installed coding standards for "Origo"
-
-        vendor/bin/phpcs -i
-
-5. Shortcut
+4. Shortcut
 		
 		Copy phpcbf.bat and phpcs.bat into your system PATH and simply use
+
 		Change file content on your needs
 
         phpcs /path/to/code
         phpcbf /path/to/code
+
+5. Check the installed coding standards for "Origo"
+
+        phpcs -i
+
