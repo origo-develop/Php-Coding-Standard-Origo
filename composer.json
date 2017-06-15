@@ -11,7 +11,7 @@
             "email": "tompai.tamas@origo.hu"
         }
     ],
-    "require-dev": {
+    "require": {
         "escapestudios/symfony2-coding-standard": "@stable"
     }
 }
