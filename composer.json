@@ -2,7 +2,7 @@
     "name": "origo-develop/Php-Coding-Standard-Origo",
     "type": "phpcodesniffer-standard",
     "description": "CodeSniffer ruleset for the Origo coding standard",
-    "keywords": ["Origo", "Symfony2", "coding standard", "phpcs"],
+    "keywords": ["Origo", "Symfony2", "coding standard", "phpcs", "phpmd", "sublime"],
     "homepage": "https://github.com/origo-develop/Php-Coding-Standard-Origo",
     "license": "MIT",
     "authors": [
@@ -11,7 +11,7 @@
             "email": "tompai.tamas@origo.hu"
         }
     ],
-    "require": {
+    "require-dev": {
         "escapestudios/symfony2-coding-standard": "@stable"
     }
 }
