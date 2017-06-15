@@ -12,6 +12,7 @@
         }
     ],
     "require": {
+        "phpmd/phpmd" : "@stable",
         "escapestudios/symfony2-coding-standard": "@stable"
     }
 }
