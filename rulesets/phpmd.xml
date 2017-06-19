@@ -3,18 +3,62 @@
     <description>
         Origo Ruleset contains a collection of rules.
     </description>
+    
     <rule ref="rulesets/unusedcode.xml" />
+
     <rule ref="rulesets/naming.xml">
-        <exclude name="VariableNamingConventions" />
+        <exclude name="VariableNamingConventions" /> <!-- ezt lehet hasznalni kellene! -->
         <exclude name="ShortVariable" />
+        <exclude name="ShortMethodName" />
     </rule>
-    <rule ref="rulesets/design.xml" />
+
+    <rule ref="rulesets/design.xml">
+        <exclude name="NumberOfChildren" />
+        <exclude name="ExitExpression" />
+    </rule>
+
     <rule ref="rulesets/controversial.xml">
-        <exclude name="CamelCasePropertyName" />
+        <exclude name="CamelCasePropertyName" /> <!-- ezt lehet hasznalni kellene! -->
+        <exclude name="CamelCaseVariableName" /> <!-- ezt lehet hasznalni kellene! -->
+        <exclude name="Superglobals" /> <!-- ezt lehet hasznalni kellene! -->
     </rule>
-    <rule ref="rulesets/codesize.xml" />
+
+    <rule ref="rulesets/codesize.xml">
+        <exclude name="ExcessiveClassComplexity"/>
+        <exclude name="CyclomaticComplexity"/>
+        <exclude name="TooManyFields"/>
+        <exclude name="NPathComplexity"/>
+        <exclude name="TooManyPublicMethods"/>
+    </rule>
+    <rule ref="rulesets/codesize.xml/ExcessiveClassComplexity">
+        <properties>
+            <property name="maximum" value="71" />
+        </properties>
+    </rule>
+    <rule ref="rulesets/codesize.xml/CyclomaticComplexity">
+        <properties>
+            <property name="reportLevel" value="22" />
+        </properties>
+    </rule>
+    <rule ref="rulesets/codesize.xml/TooManyFields">
+        <properties>
+            <property name="maxfields" value="19" /> <!-- ezt maradhatna default 15 is! -->
+        </properties>
+    </rule>
+    <rule ref="rulesets/codesize.xml/NPathComplexity">
+        <properties>
+            <property name="minimum" value="12000" /> <!-- ezt maradhatna default 200 is! -->
+        </properties>
+    </rule>
+    <rule ref="rulesets/codesize.xml/TooManyPublicMethods">
+        <properties>
+            <property name="maxmethods" value="11" />
+        </properties>
+    </rule>
+
     <rule ref="rulesets/cleancode.xml">
         <exclude name="StaticAccess" />
         <exclude name="ElseExpression" />
+        <exclude name="BooleanArgumentFlag" /> <!-- ezt lehet hasznalni kellene! -->
     </rule>
 </ruleset>
